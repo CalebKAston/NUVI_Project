@@ -14,8 +14,16 @@
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.Event-list {
+  background-color: blue;
+}
+
+.Event {
+  position: relative;
+  background-color: grey;
+  border-radius: 12px;
+  margin: 5px;
+  padding: 3px;
 }
 
 @keyframes App-logo-spin {

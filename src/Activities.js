@@ -10,11 +10,11 @@ class Activities extends Component {
       return (<p>Please Wait...</p>)
     } else {
       return (
-        <p className="App-intro">
+        <div className="Event-list">
           {this.props.activities.map(function(activity){
             return <Activity activity={activity} key={activity.id}/>
           })}
-        </p>
+        </div>
       );
     }
   }
