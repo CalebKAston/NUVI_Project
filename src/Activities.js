@@ -5,7 +5,6 @@ import './App.css';
 class Activities extends Component {
 
   render() {
-    console.log(this.props.activities);
     if(this.props.activities === null){
       return (<p>Please Wait...</p>)
     } else {

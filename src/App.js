@@ -16,7 +16,6 @@ class App extends Component {
 
   componentDidMount() {
     $.get("https://nuvi-challenge.herokuapp.com/activities", function(activities) {
-      console.log('***', activities[0]);
       this.setState({
         activities: activities
       });
@@ -29,6 +28,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Welcome to NUVI Project</h2>
         </div>
+        <div id='chart-container'></div>
         <Chart activities={this.state.activities}/>
         <Activities activities={this.state.activities}/>
       </div>

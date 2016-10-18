@@ -9,13 +9,9 @@ class Activity extends Component {
   }
 
   onLike(activity) {
-    // console.log('Before', activity.activity_likes);
-    //activity.activity_likes++;
     this.setState({
       activity_likes: this.state.activity_likes + 1
     })
-    // console.log('After', activity.activity_likes);
-    alert("You liked this");
   }
 
   render() {
@@ -24,8 +20,10 @@ class Activity extends Component {
       return (
         <div className="Event">
           <p>{activity.activity_date}</p>
-          <img className="Avatar" src={activity.actor_avator}></img>
-          <p><strong>{activity.actor_name}</strong></p>
+          <div className="user">
+            <img className="Avatar" src={activity.actor_avator}></img>
+            <p><strong>{activity.actor_name}</strong></p>
+          </div>
           <p>{activity.provider}: {activity.actor_username}</p>
           <p>{activity.activity_message}</p>
           <button onClick={function(){this.onLike(activity)}.bind(this)}>likes {this.state.activity_likes}</button>
@@ -35,10 +33,12 @@ class Activity extends Component {
       return (
         <div className="Event">
           <p>{activity.activity_date}</p>
-          <img className="Avatar" src={activity.actor_avator}></img>
-          <p><strong>{activity.actor_name}</strong></p>
+          <div className="user">
+            <img className="Avatar" src={activity.actor_avator}></img>
+            <p><strong>{activity.actor_name}</strong></p>
+          </div>
           <p>{activity.provider}: {activity.actor_username}</p>
-          <img src={activity.activity_message}></img><br/>
+          <img className="Media" src={activity.activity_message}></img><br/>
           <button onClick={function(){this.onLike(activity)}.bind(this)}>likes {this.state.activity_likes}</button>
 
         </div>
