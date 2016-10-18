@@ -29,7 +29,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Welcome to NUVI Project</h2>
         </div>
-        <Chart />
+        <Chart activities={this.state.activities}/>
         <Activities activities={this.state.activities}/>
       </div>
     );
