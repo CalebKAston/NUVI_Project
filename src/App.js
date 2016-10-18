@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Intro from './Intro.js'
+import Activities from './Activities.js'
 import $ from '../node_modules/jquery/dist/jquery.js'
 
 
@@ -30,7 +30,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <Intro activities={this.state.activities}/>
+        <Activities activities={this.state.activities}/>
       </div>
     );
   }
