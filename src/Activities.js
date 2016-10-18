@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Activity from './Activity.js';
 
 class Activities extends Component {
 
@@ -13,7 +14,7 @@ class Activities extends Component {
       return (
         <p className="App-intro">
           {this.props.activities.map(function(activity){
-            return <p>Hello</p>
+            return <Activity />
           })}
         </p>
       );
