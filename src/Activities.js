@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import Activity from './Activity.js';
+import './App.css';
 
 class Activities extends Component {
 

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
 import Activities from './Activities.js'
+import Chart from './Chart.js';
 import $ from '../node_modules/jquery/dist/jquery.js'
+import './App.css';
 
 
 class App extends Component {
@@ -28,6 +29,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Welcome to NUVI Project</h2>
         </div>
+        <Chart />
         <Activities activities={this.state.activities}/>
       </div>
     );
