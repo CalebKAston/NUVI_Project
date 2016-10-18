@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Activities from './Activities.js'
 import $ from '../node_modules/jquery/dist/jquery.js'
@@ -27,7 +26,6 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to NUVI Project</h2>
         </div>
         <Activities activities={this.state.activities}/>
